@@ -224,7 +224,14 @@ a:focus-visible {
 
 .brand {
   display: inline-flex;
+  align-items: center;
   margin-bottom: 22px;
+}
+
+.brand-logo {
+  height: 40px;
+  width: auto;
+  color: var(--text-strong);
 }
 
 .brand-mark {
