@@ -229,9 +229,10 @@ a:focus-visible {
 }
 
 .brand-logo {
-  height: 50px;
+  height: 80px;
   width: auto;
   display: block;
+  object-fit: contain;
 }
 
 .brand-mark {
