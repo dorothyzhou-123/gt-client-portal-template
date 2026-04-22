@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="container">
+    <!-- Topbar -->
     <div class="topbar topbar-editorial">
       <div class="breadcrumb">
         <span>GreenTomato</span>
@@ -15,12 +16,11 @@
         <span class="current">Client Portal</span>
       </div>
       <div class="quick-actions">
-        <a class="btn" href="#timeline">Timeline</a>
-        <a class="btn" href="#versions">Versions</a>
         <a class="btn btn-primary" href="#assets">Open Master Drive</a>
       </div>
     </div>
 
+    <!-- Hero Section -->
     <section class="hero hero-editorial">
       <div class="hero-grid editorial-hero-grid">
         <div>
@@ -83,438 +83,622 @@
       </div>
     </section>
 
-    <section class="card section-feature">
-      <div class="section-intro">
-        <span class="section-kicker">Project Summary</span>
-        <h2>Context before execution</h2>
+    <!-- Tab Navigation -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="brief">Brief</button>
+      <button class="tab-btn" data-tab="timeline">Timeline</button>
+      <button class="tab-btn" data-tab="assets">Assets</button>
+      <button class="tab-btn" data-tab="storyboard">Storyboard</button>
+      <button class="tab-btn" data-tab="versions">Video Versions</button>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+
+      <!-- Brief Tab -->
+      <div class="tab-panel active" id="brief">
+        <section class="card section-feature">
+          <div class="section-intro">
+            <span class="section-kicker">Project Summary</span>
+            <h2>Context before execution</h2>
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-copy">
+              <p>
+                The objective is to create a premium hero campaign video with AI-assisted face-swap execution while maintaining a polished,
+                brand-safe final edit. This page keeps the project readable for everyone involved — client, PM, and production.
+              </p>
+              <p>
+                Instead of scattering key decisions across WhatsApp or Teams, this format keeps the brief, creative references, milestone status,
+                and review logic in one calm and client-facing space.
+              </p>
+            </div>
+
+            <div class="summary-points">
+              <div class="brief-item feature-item">
+                <h3>Deliverables</h3>
+                <p>1 hero video, 2 cutdowns, 3 social resize exports, storyboard stills, and final handoff package.</p>
+              </div>
+              <div class="brief-item feature-item">
+                <h3>Creative direction</h3>
+                <p>Elegant beauty campaign language, cinematic pacing, natural blending, and a stronger CTA ending.</p>
+              </div>
+              <div class="brief-item feature-item">
+                <h3>Review principle</h3>
+                <p>Each version clearly records feedback received, what changed, and what remains pending.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-grid editorial-grid">
+          <section class="card">
+            <div class="section-intro compact-intro">
+              <span class="section-kicker">Brief</span>
+              <h2>Client Brief</h2>
+              <p>Core objective, expected output, and production notes in one view.</p>
+            </div>
+
+            <div class="brief-list editorial-stack">
+              <div class="brief-item">
+                <h3>Objective</h3>
+                <p>Create a premium hero campaign video with AI-assisted face-swap execution while keeping the final edit polished and social-ready.</p>
+              </div>
+              <div class="brief-item">
+                <h3>Target Deliverables</h3>
+                <p>1 hero video, 2 cutdowns, 3 social resize exports, final thumbnail set, and approval-ready storyboard snapshots.</p>
+              </div>
+              <div class="brief-item">
+                <h3>Key Notes</h3>
+                <p>Client prefers elegant pacing, close-up beauty shots, natural facial blending, and a stronger product CTA in the ending sequence.</p>
+              </div>
+              <div class="brief-item">
+                <h3>Documents</h3>
+                <div class="doc-links">
+                  <a class="doc-link" href="#">
+                    <span class="doc-icon">📄</span>
+                    <span class="doc-name">Creative_Brief_DreamCampaign.pdf</span>
+                    <span class="doc-action">Open</span>
+                  </a>
+                  <a class="doc-link" href="#">
+                    <span class="doc-icon">📄</span>
+                    <span class="doc-name">Brand_Guidelines_v3.pdf</span>
+                    <span class="doc-action">Open</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-intro compact-intro">
+              <span class="section-kicker">Direction</span>
+              <h2>Creative Direction</h2>
+              <p>Visual references and approved tonal direction before they move into production execution.</p>
+            </div>
+
+            <div class="brief-list editorial-stack">
+              <div class="brief-item">
+                <h3>Visual Tone</h3>
+                <p>Elegant, cinematic, premium beauty campaign with controlled motion and soft contrast.</p>
+              </div>
+              <div class="brief-item">
+                <h3>Reference Keywords</h3>
+                <p>Luxury, polished skin texture, dramatic closeups, high-end motion graphics, and minimal titles.</p>
+              </div>
+              <div class="brief-item">
+                <h3>Approved Direction</h3>
+                <p>Opening mood, casting direction, and typography approach are aligned. The ending CTA remains under review.</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
 
-      <div class="summary-grid">
-        <div class="summary-copy">
-          <p>
-            The objective is to create a premium hero campaign video with AI-assisted face-swap execution while maintaining a polished,
-            brand-safe final edit. This page keeps the project readable for everyone involved — client, PM, and production.
-          </p>
-          <p>
-            Instead of scattering key decisions across WhatsApp or Teams, this format keeps the brief, creative references, milestone status,
-            and review logic in one calm and client-facing space.
-          </p>
-        </div>
+      <!-- Timeline Tab -->
+      <div class="tab-panel" id="timeline">
+        <section class="card">
+          <div class="section-intro">
+            <span class="section-kicker">Progress</span>
+            <h2>Project Timeline</h2>
+            <p>A clean milestone view showing what has been aligned, what is in motion, and what is waiting for sign-off.</p>
+          </div>
 
-        <div class="summary-points">
-          <div class="brief-item feature-item">
-            <h3>Deliverables</h3>
-            <p>1 hero video, 2 cutdowns, 3 social resize exports, storyboard stills, and final handoff package.</p>
+          <div class="timeline editorial-timeline">
+            <div class="timeline-item done">
+              <div class="timeline-top">
+                <strong>Phase 1 — Briefing & Alignment</strong>
+                <span class="tag tag-green">Completed</span>
+              </div>
+              <p class="muted">Brief collected, references aligned, production scope confirmed, and first storyboard direction approved.</p>
+            </div>
+
+            <div class="timeline-item done">
+              <div class="timeline-top">
+                <strong>Phase 2 — Storyboard & Asset Prep</strong>
+                <span class="tag tag-green">Completed</span>
+              </div>
+              <p class="muted">Storyboard draft completed, base footage organized, and first facial mapping tests prepared for production.</p>
+            </div>
+
+            <div class="timeline-item active">
+              <div class="timeline-top">
+                <strong>Phase 3 — Edit Development & Revision Round 2</strong>
+                <span class="tag tag-amber">In progress</span>
+              </div>
+              <p class="muted">New preview uploaded, pacing updated, scene 3 face-swap replaced, and subtitle treatment refined.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-top">
+                <strong>Phase 4 — Final Approval & Delivery</strong>
+                <span class="tag tag-gray">Pending</span>
+              </div>
+              <p class="muted">Final HD exports, cutdowns, and delivery package will be published after client sign-off.</p>
+            </div>
           </div>
-          <div class="brief-item feature-item">
-            <h3>Creative direction</h3>
-            <p>Elegant beauty campaign language, cinematic pacing, natural blending, and a stronger CTA ending.</p>
+        </section>
+
+        <!-- Sprint Board -->
+        <section class="card" style="margin-top: 24px;">
+          <div class="section-intro">
+            <span class="section-kicker">Agile Board</span>
+            <h2>Sprint Progress</h2>
           </div>
-          <div class="brief-item feature-item">
-            <h3>Review principle</h3>
-            <p>Each version clearly records feedback received, what changed, and what remains pending.</p>
+          <div class="sprint-board">
+            <div class="sprint-column">
+              <div class="sprint-col-header to-do">To Do</div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Design</span>
+                <p>Finalize end card typography</p>
+              </div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Review</span>
+                <p>Client feedback consolidation</p>
+              </div>
+            </div>
+            <div class="sprint-column">
+              <div class="sprint-col-header in-progress">In Progress</div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Edit</span>
+                <p>V3 face-swap refinement</p>
+              </div>
+              <div class="sprint-card">
+                <span class="sprint-tag">VFX</span>
+                <p>Scene 3 expression blend</p>
+              </div>
+            </div>
+            <div class="sprint-column">
+              <div class="sprint-col-header done">Done</div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Edit</span>
+                <p>Opening pacing update</p>
+              </div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Motion</span>
+                <p>CTA animation v2</p>
+              </div>
+              <div class="sprint-card">
+                <span class="sprint-tag">Color</span>
+                <p>Product shot balance</p>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
 
-    <div class="section-grid editorial-grid">
-      <section class="card">
-        <div class="section-intro compact-intro">
-          <span class="section-kicker">Brief</span>
-          <h2>Client Brief</h2>
-          <p>Core objective, expected output, and production notes in one view.</p>
-        </div>
+      <!-- Assets Tab -->
+      <div class="tab-panel" id="assets">
+        <section class="card section-feature">
+          <div class="section-intro">
+            <span class="section-kicker">Assets</span>
+            <h2>Master Links & Resources</h2>
+            <p>The essential project links gathered in one elegant handoff area.</p>
+          </div>
 
-        <div class="brief-list editorial-stack">
-          <div class="brief-item">
-            <h3>Objective</h3>
-            <p>Create a premium hero campaign video with AI-assisted face-swap execution while keeping the final edit polished and social-ready.</p>
+          <div class="asset-list editorial-stack">
+            <div class="asset-item">
+              <div class="asset-row">
+                <div>
+                  <h3>Master Drive Folder</h3>
+                  <p>Main working folder for briefs, exports, and archived versions.</p>
+                </div>
+                <a class="btn" href="#">Open</a>
+              </div>
+            </div>
+            <div class="asset-item">
+              <div class="asset-row">
+                <div>
+                  <h3>Approved Assets</h3>
+                  <p>Selected logos, product packshots, title cards, and approved references.</p>
+                </div>
+                <a class="btn" href="#">Download</a>
+              </div>
+            </div>
+            <div class="asset-item">
+              <div class="asset-row">
+                <div>
+                  <h3>Latest Preview Package</h3>
+                  <p>Low-res preview exports with watermark for internal and client review.</p>
+                </div>
+                <a class="btn" href="#">Open</a>
+              </div>
+            </div>
+            <div class="asset-item">
+              <div class="asset-row">
+                <div>
+                  <h3>Final Delivery</h3>
+                  <p>HD master, cutdowns, and approved final output package. Release once approval is confirmed.</p>
+                </div>
+                <a class="btn btn-primary" href="#">Pending approval</a>
+              </div>
+            </div>
           </div>
-          <div class="brief-item">
-            <h3>Target Deliverables</h3>
-            <p>1 hero video, 2 cutdowns, 3 social resize exports, final thumbnail set, and approval-ready storyboard snapshots.</p>
-          </div>
-          <div class="brief-item">
-            <h3>Key Notes</h3>
-            <p>Client prefers elegant pacing, close-up beauty shots, natural facial blending, and a stronger product CTA in the ending sequence.</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="card">
-        <div class="section-intro compact-intro">
-          <span class="section-kicker">Direction</span>
-          <h2>Creative Direction</h2>
-          <p>Visual references and approved tonal direction before they move into production execution.</p>
-        </div>
+        <!-- Team Section -->
+        <section class="card" style="margin-top: 24px;">
+          <div class="section-intro">
+            <span class="section-kicker">Team</span>
+            <h2>Project Team</h2>
+          </div>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="member-avatar">DC</div>
+              <div class="member-info">
+                <strong>Dorothy Chow</strong>
+                <span class="muted">Project Lead</span>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">TK</div>
+              <div class="member-info">
+                <strong>Tommy Kwok</strong>
+                <span class="muted">Creative Director</span>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">AL</div>
+              <div class="member-info">
+                <strong>Amy Li</strong>
+                <span class="muted">Video Editor</span>
+              </div>
+            </div>
+            <div class="team-member">
+              <div class="member-avatar">JS</div>
+              <div class="member-info">
+                <strong>John Sit</strong>
+                <span class="muted">VFX Artist</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <div class="brief-list editorial-stack">
-          <div class="brief-item">
-            <h3>Visual Tone</h3>
-            <p>Elegant, cinematic, premium beauty campaign with controlled motion and soft contrast.</p>
+      <!-- Storyboard Tab -->
+      <div class="tab-panel" id="storyboard">
+        <section class="card">
+          <div class="section-intro compact-intro">
+            <span class="section-kicker">Storyboard</span>
+            <h2>Scene Structure</h2>
+            <p>A quick visual map of the intended narrative progression.</p>
           </div>
-          <div class="brief-item">
-            <h3>Reference Keywords</h3>
-            <p>Luxury, polished skin texture, dramatic closeups, high-end motion graphics, and minimal titles.</p>
+
+          <div class="storyboard-grid">
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 01</span>
+              </div>
+              <div class="frame-body">
+                <h4>Opening Beauty Shot</h4>
+                <p class="muted">Soft product reveal with slow zoom and model eye contact.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 02</span>
+              </div>
+              <div class="frame-body">
+                <h4>Texture Macro</h4>
+                <p class="muted">Close-up skin detail and gentle light sweep transition.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 03</span>
+              </div>
+              <div class="frame-body">
+                <h4>Face-Swap Hero Angle</h4>
+                <p class="muted">Updated performer match and stabilized expression blend.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 04</span>
+              </div>
+              <div class="frame-body">
+                <h4>Product Motion Insert</h4>
+                <p class="muted">Elegant side spin with refined highlight treatment.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 05</span>
+              </div>
+              <div class="frame-body">
+                <h4>Closing Message</h4>
+                <p class="muted">Typography and CTA placement under final review.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
+            <div class="frame">
+              <div class="frame-thumb">
+                <span>Scene 06</span>
+              </div>
+              <div class="frame-body">
+                <h4>End Card</h4>
+                <p class="muted">Final logo lockup with campaign tagline and CTA button.</p>
+                <a class="frame-link" href="#">View Assets →</a>
+              </div>
+            </div>
           </div>
-          <div class="brief-item">
-            <h3>Approved Direction</h3>
-            <p>Opening mood, casting direction, and typography approach are aligned. The ending CTA remains under review.</p>
+        </section>
+
+        <!-- Documents Section -->
+        <section class="card" style="margin-top: 24px;">
+          <div class="section-intro">
+            <span class="section-kicker">Documents</span>
+            <h2>Storyboard Files</h2>
           </div>
-        </div>
-      </section>
+          <div class="doc-list">
+            <a class="doc-link large" href="#">
+              <span class="doc-icon">📎</span>
+              <div class="doc-info">
+                <strong>Storyboard_Full_v3.pdf</strong>
+                <span class="muted">Complete storyboard with all 6 scenes - 12.4 MB</span>
+              </div>
+              <span class="doc-action">Download</span>
+            </a>
+            <a class="doc-link large" href="#">
+              <span class="doc-icon">📎</span>
+              <div class="doc-info">
+                <strong>Scene_01-03_Stills.zip</strong>
+                <span class="muted">High-res stills from opening scenes - 45.2 MB</span>
+              </div>
+              <span class="doc-action">Download</span>
+            </a>
+            <a class="doc-link large" href="#">
+              <span class="doc-icon">📎</span>
+              <div class="doc-info">
+                <strong>Scene_04-06_Stills.zip</strong>
+                <span class="muted">High-res stills from closing scenes - 38.7 MB</span>
+              </div>
+              <span class="doc-action">Download</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Video Versions Tab -->
+      <div class="tab-panel" id="versions">
+        <section class="card section-feature">
+          <div class="section-intro">
+            <span class="section-kicker">Review History</span>
+            <h2>Version Notes</h2>
+            <p>Each version explains what changed, what feedback was received, and what remains pending before the next release.</p>
+          </div>
+
+          <!-- Version Sub-tabs -->
+          <div class="version-subtabs">
+            <button class="subtab-btn" data-version="v1">V1</button>
+            <button class="subtab-btn active" data-version="v2">V2</button>
+            <button class="subtab-btn" data-version="v3">V3</button>
+          </div>
+
+          <!-- V1 Content -->
+          <div class="version-subpanel" id="v1">
+            <div class="version-content">
+              <div class="version-header">
+                <div>
+                  <strong>Version 1 — Initial Delivery</strong>
+                  <div class="version-meta">
+                    <span class="muted">Uploaded: 14 Apr 2026</span>
+                    <span class="tag tag-gray">Archived</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-section">
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Version 1 Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="version-grid">
+                <div class="changes-box">
+                  <h4>First delivery scope</h4>
+                  <ul class="clean">
+                    <li>Initial rough cut for pacing and concept approval.</li>
+                    <li>Temporary titles and placeholder face-swap render.</li>
+                    <li>Base storyboard translated into edit structure.</li>
+                  </ul>
+                </div>
+                <div class="feedback-box">
+                  <h4>Main comments received</h4>
+                  <ul class="clean">
+                    <li>Need more premium rhythm.</li>
+                    <li>Ending should feel more brand-led.</li>
+                    <li>Some transitions were too abrupt.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="comments-section">
+                <h4>Client Comments</h4>
+                <div class="comment">
+                  <div class="comment-avatar">DC</div>
+                  <div class="comment-body">
+                    <div class="comment-header">
+                      <strong>Dorothy Chow</strong>
+                      <span class="muted">14 Apr 2026, 3:45 PM</span>
+                    </div>
+                    <p>Overall great start! Just need to refine the pacing and make the ending feel more premium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- V2 Content -->
+          <div class="version-subpanel active" id="v2">
+            <div class="version-content">
+              <div class="version-header">
+                <div>
+                  <strong>Version 2 — Revision Round 2</strong>
+                  <div class="version-meta">
+                    <span class="muted">Uploaded: 19 Apr 2026</span>
+                    <span class="tag tag-green">Reviewed</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-section">
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Version 2 Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="version-grid">
+                <div class="changes-box">
+                  <h4>What changed from V1</h4>
+                  <ul class="clean">
+                    <li>Improved pacing in first 5 seconds.</li>
+                    <li>Reworked title animation to feel more premium.</li>
+                    <li>Cleaned color balance in product close-up shots.</li>
+                  </ul>
+                </div>
+                <div class="feedback-box">
+                  <h4>Client comments</h4>
+                  <ul class="clean">
+                    <li>Overall tone feels much closer to the target look.</li>
+                    <li>Would like a stronger product reveal.</li>
+                    <li>Need one more pass on face-swap quality in the hero angle.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="comments-section">
+                <h4>Client Comments</h4>
+                <div class="comment">
+                  <div class="comment-avatar">DC</div>
+                  <div class="comment-body">
+                    <div class="comment-header">
+                      <strong>Dorothy Chow</strong>
+                      <span class="muted">19 Apr 2026, 10:30 AM</span>
+                    </div>
+                    <p>Much better! The pacing is now on point. Just need to work on the face-swap quality.</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="comment-avatar">TK</div>
+                  <div class="comment-body">
+                    <div class="comment-header">
+                      <strong>Tommy Kwok</strong>
+                      <span class="muted">19 Apr 2026, 2:15 PM</span>
+                    </div>
+                    <p>Agreed. Let's also make the product reveal stronger in the next iteration.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- V3 Content -->
+          <div class="version-subpanel" id="v3">
+            <div class="version-content">
+              <div class="version-header">
+                <div>
+                  <strong>Version 3 — Pending Approval</strong>
+                  <div class="version-meta">
+                    <span class="muted">Uploaded: 22 Apr 2026</span>
+                    <span class="tag tag-amber">Awaiting client feedback</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-section">
+                <div class="video-embed">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Version 3 Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="version-grid">
+                <div class="changes-box">
+                  <h4>What changed from V2</h4>
+                  <ul class="clean">
+                    <li>Replaced face-swap render in scene 3 with cleaner mouth tracking.</li>
+                    <li>Reduced opening shot duration for faster hook.</li>
+                    <li>Adjusted subtitle safe area for mobile framing.</li>
+                    <li>Updated CTA layout in end card.</li>
+                  </ul>
+                </div>
+                <div class="feedback-box">
+                  <h4>Pending / watch-outs</h4>
+                  <ul class="clean">
+                    <li>Final confirmation on CTA copy.</li>
+                    <li>Client to confirm if ending logo size is approved.</li>
+                    <li>Once approved, HD exports and cutdowns will be released.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="comments-section">
+                <h4>Client Comments</h4>
+                <div class="comment-placeholder">
+                  <p>Awaiting feedback...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Final Handover -->
+        <section class="card section-feature" style="margin-top: 24px;">
+          <div class="section-intro">
+            <span class="section-kicker">Final Handover</span>
+            <h2>What will be released after approval</h2>
+          </div>
+
+          <div class="summary-points handover-grid">
+            <div class="brief-item feature-item">
+              <h3>Hero master export</h3>
+              <p>4K or final approved delivery resolution, ready for master release.</p>
+            </div>
+            <div class="brief-item feature-item">
+              <h3>15s cutdown exports</h3>
+              <p>Vertical and square paid social formats prepared from the approved master.</p>
+            </div>
+            <div class="brief-item feature-item">
+              <h3>Approval archive</h3>
+              <p>Approved version, sign-off date, and final delivery links documented for future reference.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
     </div>
 
-    <section class="card" id="timeline">
-      <div class="section-intro">
-        <span class="section-kicker">Progress</span>
-        <h2>Project Timeline</h2>
-        <p>A clean milestone view showing what has been aligned, what is in motion, and what is waiting for sign-off.</p>
-      </div>
-
-      <div class="timeline editorial-timeline">
-        <div class="timeline-item done">
-          <div class="timeline-top">
-            <strong>Phase 1 — Briefing & Alignment</strong>
-            <span class="tag tag-green">Completed</span>
-          </div>
-          <p class="muted">Brief collected, references aligned, production scope confirmed, and first storyboard direction approved.</p>
-        </div>
-
-        <div class="timeline-item done">
-          <div class="timeline-top">
-            <strong>Phase 2 — Storyboard & Asset Prep</strong>
-            <span class="tag tag-green">Completed</span>
-          </div>
-          <p class="muted">Storyboard draft completed, base footage organized, and first facial mapping tests prepared for production.</p>
-        </div>
-
-        <div class="timeline-item active">
-          <div class="timeline-top">
-            <strong>Phase 3 — Edit Development & Revision Round 2</strong>
-            <span class="tag tag-amber">In progress</span>
-          </div>
-          <p class="muted">New preview uploaded, pacing updated, scene 3 face-swap replaced, and subtitle treatment refined.</p>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-top">
-            <strong>Phase 4 — Final Approval & Delivery</strong>
-            <span class="tag tag-gray">Pending</span>
-          </div>
-          <p class="muted">Final HD exports, cutdowns, and delivery package will be published after client sign-off.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="two-col editorial-grid" style="margin-top: 24px;">
-      <section class="card">
-        <div class="section-intro compact-intro">
-          <span class="section-kicker">Storyboard</span>
-          <h2>Scene Structure</h2>
-          <p>A quick visual map of the intended narrative progression.</p>
-        </div>
-
-        <div class="storyboard-grid">
-          <div class="frame">
-            <div class="frame-thumb">Scene 01</div>
-            <div class="frame-body">
-              <h4>Opening Beauty Shot</h4>
-              <p class="muted">Soft product reveal with slow zoom and model eye contact.</p>
-            </div>
-          </div>
-          <div class="frame">
-            <div class="frame-thumb">Scene 02</div>
-            <div class="frame-body">
-              <h4>Texture Macro</h4>
-              <p class="muted">Close-up skin detail and gentle light sweep transition.</p>
-            </div>
-          </div>
-          <div class="frame">
-            <div class="frame-thumb">Scene 03</div>
-            <div class="frame-body">
-              <h4>Face-Swap Hero Angle</h4>
-              <p class="muted">Updated performer match and stabilized expression blend.</p>
-            </div>
-          </div>
-          <div class="frame">
-            <div class="frame-thumb">Scene 04</div>
-            <div class="frame-body">
-              <h4>Product Motion Insert</h4>
-              <p class="muted">Elegant side spin with refined highlight treatment.</p>
-            </div>
-          </div>
-          <div class="frame">
-            <div class="frame-thumb">Scene 05</div>
-            <div class="frame-body">
-              <h4>Closing Message</h4>
-              <p class="muted">Typography and CTA placement under final review.</p>
-            </div>
-          </div>
-          <div class="frame">
-            <div class="frame-thumb">Scene 06</div>
-            <div class="frame-body">
-              <h4>End Card</h4>
-              <p class="muted">Final logo lockup with campaign tagline and CTA button.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card" id="assets">
-        <div class="section-intro compact-intro">
-          <span class="section-kicker">Assets</span>
-          <h2>Master Links</h2>
-          <p>The essential project links gathered in one elegant handoff area.</p>
-        </div>
-
-        <div class="asset-list editorial-stack">
-          <div class="asset-item">
-            <div class="asset-row">
-              <div>
-                <h3>Master Drive Folder</h3>
-                <p>Main working folder for briefs, exports, and archived versions.</p>
-              </div>
-              <a class="btn" href="#">Open</a>
-            </div>
-          </div>
-          <div class="asset-item">
-            <div class="asset-row">
-              <div>
-                <h3>Approved Assets</h3>
-                <p>Selected logos, product packshots, title cards, and approved references.</p>
-              </div>
-              <a class="btn" href="#">Download</a>
-            </div>
-          </div>
-          <div class="asset-item">
-            <div class="asset-row">
-              <div>
-                <h3>Latest Preview Package</h3>
-                <p>Low-res preview exports with watermark for internal and client review.</p>
-              </div>
-              <a class="btn" href="#">Open</a>
-            </div>
-          </div>
-          <div class="asset-item">
-            <div class="asset-row">
-              <div>
-                <h3>Final Delivery</h3>
-                <p>HD master, cutdowns, and approved final output package. Release once approval is confirmed.</p>
-              </div>
-              <a class="btn btn-primary" href="#">Pending approval</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="card section-feature">
-      <div class="section-intro">
-        <span class="section-kicker">Preview</span>
-        <h2>Latest Video Review</h2>
-        <p>A quieter, more editorial presentation of the review cut and supporting export.</p>
-      </div>
-
-      <div class="gallery editorial-gallery">
-        <article class="media-card featured-media">
-          <div class="media-preview">
-            Main Preview V2
-            <span class="watermark">Preview only</span>
-          </div>
-          <div class="media-body">
-            <strong>Hero Video — Main Preview</strong>
-            <p class="muted">Updated opening pacing and improved face-swap quality in scene 3.</p>
-            <div class="quick-actions">
-              <a class="btn btn-primary" href="#">Watch</a>
-              <a class="btn" href="#versions">See revision notes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="media-card">
-          <div class="media-preview">
-            15s Cutdown V1
-            <span class="watermark">Preview only</span>
-          </div>
-          <div class="media-body">
-            <strong>Social Cutdown — 15 seconds</strong>
-            <p class="muted">Short-form version for paid social with revised product CTA sequence.</p>
-            <div class="quick-actions">
-              <a class="btn" href="#">Watch</a>
-              <a class="btn" href="#">Download</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="card" id="versions" style="margin-top: 24px;">
-      <div class="section-intro">
-        <span class="section-kicker">Review History</span>
-        <h2>Version Notes</h2>
-        <p>Each version explains what changed, what feedback was received, and what remains pending before the next release.</p>
-      </div>
-
-      <div class="version-list">
-        <details class="version">
-          <summary>
-            <div>
-              <strong>Version 3 — Pending Approval</strong>
-              <div class="version-meta">
-                <span class="muted">Uploaded: 22 Apr 2026</span>
-                <span class="tag tag-amber">Awaiting client feedback</span>
-              </div>
-            </div>
-            <span class="accent">Open details</span>
-          </summary>
-          <div class="version-body">
-            <div class="version-grid">
-              <div class="preview-box">
-                <h4>Preview</h4>
-                <div class="media-preview" style="border-radius: 14px;">Version 3 Preview<span class="watermark">Latest</span></div>
-              </div>
-              <div class="changes-box">
-                <h4>What changed from V2</h4>
-                <ul class="clean">
-                  <li>Replaced face-swap render in scene 3 with cleaner mouth tracking.</li>
-                  <li>Reduced opening shot duration for faster hook.</li>
-                  <li>Adjusted subtitle safe area for mobile framing.</li>
-                  <li>Updated CTA layout in end card.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="version-grid">
-              <div class="feedback-box">
-                <h4>Feedback received from previous round</h4>
-                <ul class="clean">
-                  <li>Opening felt slightly too slow.</li>
-                  <li>Scene 3 face replacement needed more natural blending.</li>
-                  <li>Product logo should appear stronger at the end.</li>
-                </ul>
-              </div>
-              <div class="feedback-box">
-                <h4>Pending / watch-outs</h4>
-                <ul class="clean">
-                  <li>Final confirmation on CTA copy.</li>
-                  <li>Client to confirm if ending logo size is approved.</li>
-                  <li>Once approved, HD exports and cutdowns will be released.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <details class="version" open>
-          <summary>
-            <div>
-              <strong>Version 2 — Revision Round 2</strong>
-              <div class="version-meta">
-                <span class="muted">Uploaded: 19 Apr 2026</span>
-                <span class="tag tag-green">Reviewed</span>
-              </div>
-            </div>
-            <span class="accent">Open details</span>
-          </summary>
-          <div class="version-body">
-            <div class="version-grid">
-              <div class="preview-box">
-                <h4>Preview</h4>
-                <div class="media-preview" style="border-radius: 14px;">Version 2 Preview</div>
-              </div>
-              <div class="changes-box">
-                <h4>What changed from V1</h4>
-                <ul class="clean">
-                  <li>Improved pacing in first 5 seconds.</li>
-                  <li>Reworked title animation to feel more premium.</li>
-                  <li>Cleaned color balance in product close-up shots.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="version-grid">
-              <div class="feedback-box">
-                <h4>Client comments</h4>
-                <ul class="clean">
-                  <li>Overall tone feels much closer to the target look.</li>
-                  <li>Would like a stronger product reveal.</li>
-                  <li>Need one more pass on face-swap quality in the hero angle.</li>
-                </ul>
-              </div>
-              <div class="feedback-box">
-                <h4>Status</h4>
-                <ul class="clean">
-                  <li>Main comments already rolled into V3.</li>
-                  <li>V2 stays here for comparison against the newest version.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <details class="version">
-          <summary>
-            <div>
-              <strong>Version 1 — Initial Delivery</strong>
-              <div class="version-meta">
-                <span class="muted">Uploaded: 14 Apr 2026</span>
-                <span class="tag tag-gray">Archived</span>
-              </div>
-            </div>
-            <span class="accent">Open details</span>
-          </summary>
-          <div class="version-body">
-            <div class="version-grid">
-              <div class="changes-box">
-                <h4>First delivery scope</h4>
-                <ul class="clean">
-                  <li>Initial rough cut for pacing and concept approval.</li>
-                  <li>Temporary titles and placeholder face-swap render.</li>
-                  <li>Base storyboard translated into edit structure.</li>
-                </ul>
-              </div>
-              <div class="feedback-box">
-                <h4>Main comments received</h4>
-                <ul class="clean">
-                  <li>Need more premium rhythm.</li>
-                  <li>Ending should feel more brand-led.</li>
-                  <li>Some transitions were too abrupt.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <section class="card section-feature" style="margin-top: 24px;">
-      <div class="section-intro">
-        <span class="section-kicker">Final Handover</span>
-        <h2>What will be released after approval</h2>
-        <p>Replacing the operational checklist with a calmer handover summary makes the page feel more like a premium client document than an internal dashboard.</p>
-      </div>
-
-      <div class="summary-points handover-grid">
-        <div class="brief-item feature-item">
-          <h3>Hero master export</h3>
-          <p>4K or final approved delivery resolution, ready for master release.</p>
-        </div>
-        <div class="brief-item feature-item">
-          <h3>15s cutdown exports</h3>
-          <p>Vertical and square paid social formats prepared from the approved master.</p>
-        </div>
-        <div class="brief-item feature-item">
-          <h3>Approval archive</h3>
-          <p>Approved version, sign-off date, and final delivery links documented for future reference.</p>
-        </div>
-      </div>
-
-      <p class="footer-note">
-        Template note: replace all sample copy, links, version notes, and status labels with real project data. This page is designed as a reusable GT client portal template.
-      </p>
-    </section>
+    <p class="footer-note">
+      Template note: replace all sample copy, links, version notes, and status labels with real project data. This page is designed as a reusable GT client portal template.
+    </p>
   </div>
+
+  <script src="tabs.js"></script>
 </body>
 </html>
