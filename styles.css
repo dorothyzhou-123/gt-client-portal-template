@@ -85,7 +85,6 @@ img {
 .topbar,
 .quick-actions,
 .breadcrumb,
-.brand,
 .asset-row,
 .timeline-top,
 .version-meta {
@@ -225,7 +224,8 @@ a:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 0;
+  padding-left: 10px;
 }
 
 .brand-logo {
