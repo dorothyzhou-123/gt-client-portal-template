@@ -24,11 +24,14 @@
     <section class="hero hero-editorial">
       <div class="hero-grid editorial-hero-grid">
         <div>
-          <div class="brand">
-            <img src="Horizontal Logo_Main Green and Black.png" alt="GreenTomato" class="brand-logo" />
+          <div class="brand-header">
+            <div class="brand">
+              <img src="Horizontal Logo_Main Green and Black.png" alt="GreenTomato" class="brand-logo" />
+            </div>
+            <span class="hero-kicker">A clearer, more premium way to review each round</span>
           </div>
 
-          <span class="hero-kicker">A clearer, more premium way to review each round</span>
+          <span class="hero-kicker" style="display: none;"></span>
           <h1>Dream Campaign 2026</h1>
           <p class="lead lead-editorial">
             This portal is the single source of truth for the project — from brief and creative direction to storyboard, review links,
@@ -385,65 +388,207 @@
             <p>A quick visual map of the intended narrative progression.</p>
           </div>
 
-          <div class="storyboard-grid">
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 01</span>
+          <!-- Version Sub-tabs -->
+          <div class="version-subtabs">
+            <button class="subtab-btn" data-storyboard="v1">V1</button>
+            <button class="subtab-btn active" data-storyboard="v2">V2</button>
+            <button class="subtab-btn" data-storyboard="v3">V3</button>
+          </div>
+
+          <!-- V1 Storyboard -->
+          <div class="storyboard-subpanel" id="storyboard-v1">
+            <div class="storyboard-grid">
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 01</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Opening Beauty Shot</h4>
+                  <p class="muted">Initial rough composition for concept approval.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-              <div class="frame-body">
-                <h4>Opening Beauty Shot</h4>
-                <p class="muted">Soft product reveal with slow zoom and model eye contact.</p>
-                <a class="frame-link" href="#">View Assets →</a>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 02</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Texture Macro</h4>
+                  <p class="muted">Basic lighting test and transition placeholder.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 03</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Face-Swap Hero Angle</h4>
+                  <p class="muted">First pass face-swap test with basic mapping.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 04</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Product Motion Insert</h4>
+                  <p class="muted">Simple product spin with temporary lighting.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 05</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Closing Message</h4>
+                  <p class="muted">Draft typography and CTA placement.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 06</span>
+                </div>
+                <div class="frame-body">
+                  <h4>End Card</h4>
+                  <p class="muted">Basic logo lockup and tagline layout.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
             </div>
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 02</span>
+          </div>
+
+          <!-- V2 Storyboard -->
+          <div class="storyboard-subpanel active" id="storyboard-v2">
+            <div class="storyboard-grid">
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 01</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Opening Beauty Shot</h4>
+                  <p class="muted">Soft product reveal with slow zoom and model eye contact.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-              <div class="frame-body">
-                <h4>Texture Macro</h4>
-                <p class="muted">Close-up skin detail and gentle light sweep transition.</p>
-                <a class="frame-link" href="#">View Assets →</a>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 02</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Texture Macro</h4>
+                  <p class="muted">Close-up skin detail and gentle light sweep transition.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 03</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Face-Swap Hero Angle</h4>
+                  <p class="muted">Updated performer match and stabilized expression blend.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 04</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Product Motion Insert</h4>
+                  <p class="muted">Elegant side spin with refined highlight treatment.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 05</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Closing Message</h4>
+                  <p class="muted">Typography and CTA placement under final review.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
+              </div>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 06</span>
+                </div>
+                <div class="frame-body">
+                  <h4>End Card</h4>
+                  <p class="muted">Final logo lockup with campaign tagline and CTA button.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
             </div>
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 03</span>
+          </div>
+
+          <!-- V3 Storyboard -->
+          <div class="storyboard-subpanel" id="storyboard-v3">
+            <div class="storyboard-grid">
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 01</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Opening Beauty Shot</h4>
+                  <p class="muted">Refined pacing with enhanced model gaze and product focus.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-              <div class="frame-body">
-                <h4>Face-Swap Hero Angle</h4>
-                <p class="muted">Updated performer match and stabilized expression blend.</p>
-                <a class="frame-link" href="#">View Assets →</a>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 02</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Texture Macro</h4>
+                  <p class="muted">Premium skin texture with improved lighting gradient.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-            </div>
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 04</span>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 03</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Face-Swap Hero Angle</h4>
+                  <p class="muted">Final blend with cleaner mouth tracking and natural expression.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-              <div class="frame-body">
-                <h4>Product Motion Insert</h4>
-                <p class="muted">Elegant side spin with refined highlight treatment.</p>
-                <a class="frame-link" href="#">View Assets →</a>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 04</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Product Motion Insert</h4>
+                  <p class="muted">Polished spin with enhanced highlights and reflections.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-            </div>
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 05</span>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 05</span>
+                </div>
+                <div class="frame-body">
+                  <h4>Closing Message</h4>
+                  <p class="muted">Approved typography and strengthened CTA layout.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
-              <div class="frame-body">
-                <h4>Closing Message</h4>
-                <p class="muted">Typography and CTA placement under final review.</p>
-                <a class="frame-link" href="#">View Assets →</a>
-              </div>
-            </div>
-            <div class="frame">
-              <div class="frame-thumb">
-                <span>Scene 06</span>
-              </div>
-              <div class="frame-body">
-                <h4>End Card</h4>
-                <p class="muted">Final logo lockup with campaign tagline and CTA button.</p>
-                <a class="frame-link" href="#">View Assets →</a>
+              <div class="frame">
+                <div class="frame-thumb">
+                  <span>Scene 06</span>
+                </div>
+                <div class="frame-body">
+                  <h4>End Card</h4>
+                  <p class="muted">Final approved logo with tagline and CTA button.</p>
+                  <a class="frame-link" href="#">View Assets →</a>
+                </div>
               </div>
             </div>
           </div>
