@@ -8,52 +8,65 @@
 </head>
 <body>
   <div class="container">
-    <!-- Topbar -->
-    <div class="topbar topbar-editorial">
-      <div class="breadcrumb">
-        <span>GreenTomato</span>
-        <span>›</span>
-        <span class="current">Client Portal</span>
+    <!-- Portal Header -->
+    <header class="portal-header">
+      <div class="portal-header-left">
+        <img src="Horizontal Logo_Main Green and Black.png" alt="GreenTomato" class="portal-logo" />
+        <div class="portal-divider"></div>
+        <div class="portal-name">
+          <span class="portal-name-label">Client Portal</span>
+        </div>
       </div>
-      <div class="quick-actions">
-        <a class="btn btn-primary" href="#assets">Open Master Drive</a>
-      </div>
-    </div>
+      <nav class="portal-nav">
+        <a href="#versions" class="nav-link">
+          <span class="nav-icon">📄</span>
+          <span>Latest Version</span>
+        </a>
+        <a href="#assets" class="nav-link">
+          <span class="nav-icon">📁</span>
+          <span>Files</span>
+        </a>
+        <a href="#team" class="nav-link">
+          <span class="nav-icon">👥</span>
+          <span>Contact</span>
+        </a>
+        <a class="nav-link nav-link-primary" href="#drive">
+          <span class="nav-icon">💾</span>
+          <span>Drive</span>
+        </a>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero hero-editorial">
       <div class="hero-grid editorial-hero-grid">
         <div>
-          <div class="brand-header">
-            <div class="brand">
-              <img src="Horizontal Logo_Main Green and Black.png" alt="GreenTomato" class="brand-logo" />
-            </div>
-            <span class="hero-kicker">A clearer, more premium way to review each round</span>
-          </div>
-
-          <span class="hero-kicker" style="display: none;"></span>
+          <span class="hero-kicker">A clearer, more premium way to review each round</span>
           <h1>Dream Campaign 2026</h1>
           <p class="lead lead-editorial">
             This portal is the single source of truth for the project — from brief and creative direction to storyboard, review links,
             revision notes, and final delivery. Every round is documented so the whole team can understand what changed without digging through chat history.
           </p>
 
-          <div class="hero-meta">
-            <div class="meta-inline">
-              <span class="label">Client</span>
-              <strong>Dream Client Ltd.</strong>
+          <div class="hero-meta hero-meta-editorial">
+            <div class="meta-item">
+              <span class="meta-label">Client</span>
+              <span class="meta-value">Dream Client Ltd.</span>
             </div>
-            <div class="meta-inline">
-              <span class="label">Project Lead</span>
-              <strong>Dorothy Chow</strong>
+            <span class="meta-divider"></span>
+            <div class="meta-item">
+              <span class="meta-label">Project Lead</span>
+              <span class="meta-value">Dorothy Chow</span>
             </div>
-            <div class="meta-inline">
-              <span class="label">Production</span>
-              <strong>Gear</strong>
+            <span class="meta-divider"></span>
+            <div class="meta-item">
+              <span class="meta-label">Production</span>
+              <span class="meta-value">Gear</span>
             </div>
-            <div class="meta-inline">
-              <span class="label">Last Updated</span>
-              <strong>22 Apr 2026</strong>
+            <span class="meta-divider"></span>
+            <div class="meta-item">
+              <span class="meta-label">Updated</span>
+              <span class="meta-value">22 Apr 2026</span>
             </div>
           </div>
         </div>
@@ -68,32 +81,29 @@
             Latest update includes revised opening pacing, new face-swap preview treatment, and CTA refinements for approval.
           </p>
 
-          <div class="side-list editorial-list">
-            <div class="side-item">
-              <strong>Current focus</strong>
-              <span class="muted">Consolidating feedback and preparing the next review cut.</span>
-            </div>
-            <div class="side-item">
-              <strong>Next milestone</strong>
-              <span class="muted">V3 preview upload + final comment lock.</span>
-            </div>
-            <div class="side-item">
-              <strong>Delivery method</strong>
-              <span class="muted">Portal preview for review, Google Drive for master files and final exports.</span>
-            </div>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-cta" href="#versions">
+              Review Latest Version
+            </a>
+            <a class="btn btn-cta" href="#assets">
+              Open Deliverables
+            </a>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Tab Navigation -->
-    <nav class="tab-nav">
-      <button class="tab-btn active" data-tab="brief">Brief</button>
-      <button class="tab-btn" data-tab="timeline">Timeline</button>
-      <button class="tab-btn" data-tab="assets">Assets</button>
-      <button class="tab-btn" data-tab="storyboard">Storyboard</button>
-      <button class="tab-btn" data-tab="versions">Video Versions</button>
+    <!-- Section Navigation -->
+    <nav class="section-nav">
+      <button class="nav-item active" data-section="brief">Brief</button>
+      <button class="nav-item" data-section="timeline">Timeline</button>
+      <button class="nav-item" data-section="assets">Assets</button>
+      <button class="nav-item" data-section="storyboard">Storyboard</button>
+      <button class="nav-item" data-section="versions">Video Versions</button>
     </nav>
+
+    <!-- Tab Content Panels -->
+    <div class="tab-content">
 
     <!-- Tab Content -->
     <div class="tab-content">

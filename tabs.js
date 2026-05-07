@@ -1,19 +1,20 @@
-// Tab Navigation
+// Tab Navigation - Premium lightweight tabs
 document.addEventListener('DOMContentLoaded', () => {
-  const tabBtns = document.querySelectorAll('.tab-btn');
+  const navItems = document.querySelectorAll('.nav-item');
   const tabPanels = document.querySelectorAll('.tab-panel');
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tabId = btn.dataset.tab;
+  // Tab click handler
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const sectionId = item.dataset.section;
 
       // Remove active class from all tabs and panels
-      tabBtns.forEach(b => b.classList.remove('active'));
+      navItems.forEach(n => n.classList.remove('active'));
       tabPanels.forEach(p => p.classList.remove('active'));
 
       // Add active class to clicked tab and corresponding panel
-      btn.classList.add('active');
-      document.getElementById(tabId).classList.add('active');
+      item.classList.add('active');
+      document.getElementById(sectionId).classList.add('active');
     });
   });
 
@@ -25,11 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const versionId = btn.dataset.version;
 
-      // Remove active class from all version subtabs and panels
       versionSubtabBtns.forEach(b => b.classList.remove('active'));
       versionSubpanels.forEach(p => p.classList.remove('active'));
 
-      // Add active class to clicked subtab and corresponding panel
       btn.classList.add('active');
       document.getElementById(versionId).classList.add('active');
     });
@@ -43,13 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const storyboardId = btn.dataset.storyboard;
 
-      // Remove active class from all storyboard subtabs and panels
       storyboardSubtabBtns.forEach(b => b.classList.remove('active'));
       storyboardSubpanels.forEach(p => p.classList.remove('active'));
 
-      // Add active class to clicked subtab and corresponding panel
       btn.classList.add('active');
       document.getElementById(`storyboard-${storyboardId}`).classList.add('active');
     });
   });
+
+  // Scroll to top when tab changes (optional - for better UX)
+  const tabContent = document.querySelector('.tab-content');
+  if (tabContent) {
+    tabContent.addEventListener('click', (e) => {
+      if (e.target.classList.contains('nav-item')) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
 });
